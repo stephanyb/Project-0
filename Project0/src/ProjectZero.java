@@ -39,12 +39,12 @@ public class ProjectZero {
 	}
 	public static void bigFunction(int a, int b) {
 		int sum = a+b;
-		System.out.println(" " + a + b + sum);
+		System.out.println(" The sum of " + a + " + "+ b + " = "+sum);
 	}
 	
 	public static void bigFunction(double a, double b) {
 		double sum = a+b;
-		System.out.println(" " + a + b + sum);
+		System.out.println(" The sum of " + a + " + "+ b + " = "+sum);
 	}
 	
 }
