@@ -7,8 +7,39 @@ public class ProjectZero {
 
 		Scanner cin = new Scanner(System.in);
 		System.out.print("Enter two numbers: ");
-
+		
 		if(cin.hasNextInt(2))
+		{
+			cin.useRadix(2);//binary numbers inputed are converted to numerical value
+			//System.out.println("Radix:" + cin.radix());//prints base input is converted to 
+			int first = cin.nextInt();
+			//System.out.println(first);//to test if actually converted
+			
+			if(cin.hasNextInt(2))
+			{
+				//cin.useRadix(2);
+				int second = cin.nextInt();
+				bigFunction(first,second);
+			}
+			else if (cin.hasNextInt(10)) 
+			{
+				cin.useRadix(10);
+				//System.out.println("Radix: "+cin.radix());
+				int second = cin.nextInt();
+				bigFunction(first, second);
+				
+			} 
+			else if (cin.hasNextDouble())
+			{
+				double second = cin.nextDouble();
+				bigFunction(first,second);
+			} else {
+				System.out.println("Please try again and enter numbers.");
+			}
+		}
+		
+		//*********************************************************************************************
+		/*if(cin.hasNextInt(2))
 		{
 			int first = cin.nextInt();//reads in integer 1001
 			String binNum = Integer.toString(first); //converts int read in to a string 1001 to "1001"
@@ -23,17 +54,22 @@ public class ProjectZero {
 				bigFunction(convBinNum, second);
 			}
 		}
-		
+		*/
+		//****************************************************************************************
+
 		/*
 			
-		else if (cin.hasNextInt()) {
+		if (cin.hasNextInt()) {
 			int first = cin.nextInt();
 			
-			if (cin.hasNextInt()) {
+			if (cin.hasNextInt()) 
+			{
 				int second = cin.nextInt();
 				bigFunction(first, second);
 				
-			} else if (cin.hasNextDouble()) {
+			} 
+			else if (cin.hasNextDouble())
+			{
 				double second = cin.nextDouble();
 				bigFunction(first,second);
 			} else {
