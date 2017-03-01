@@ -23,7 +23,7 @@ public class ProjectZero {
 				//bigFunction(first,second);
 			}
 			else if (cin.hasNextInt(10)) 
-				//
+			//Checks if the next number is of radix 10(base 10),basically a valid integer numerical value
 			{
 				cin.useRadix(10);
 				int second = cin.nextInt();
