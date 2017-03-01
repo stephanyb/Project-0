@@ -20,7 +20,7 @@ public class ProjectZero {
 			{
 				int second = cin.nextInt();
 				sumOfBins(first,second);
-				//bigFunction(first,second);
+				//sends both base 10 numbers to function: sumOfBins
 			}
 			else if (cin.hasNextInt(10)) 
 			//Checks if the next number is of radix 10(base 10),basically a valid integer numerical value
@@ -102,23 +102,33 @@ public class ProjectZero {
 		cin.close();	
 	}
 	
+	/*Function receives the copy of two integer element types, 
+	 * evaluates their sum and prints it to screen	
+	 */
 	public static void bigFunction(int a, int b) 
 	{
 		int sum = a+b;
 		System.out.println(" The sum of " + a + " + "+ b + " = "+sum);
 	}
 	
+	/*Function receives the copy of two double element types, 
+	 * evaluates their sum and prints it to screen
+	 */
 	public static void bigFunction(double a, double b) 
 	{
 		double sum = a+b;
 		System.out.println(" The sum of " + a + " + "+ b + " = "+sum);
 	}
 	
+	/*Function receives the copy of two integer element types, 
+	 * evaluates their sum and prints it in binary to screen
+	 */
 	public static void sumOfBins(int a, int b) 
 	{
 		int sum = a+b;
-		String binSum = Integer.toBinaryString(sum);
+		String binSum = Integer.toBinaryString(sum);//converts the sum integer value 
+											        //to a binary string in base 2
 		System.out.println(" The sum of " + a + " + "+ b + " = "+binSum+ " in Binary");
 	}
+	
 }
-
