@@ -105,6 +105,7 @@ public class ProjectZero {
 	/*Function receives the copy of two integer element types, 
 	 * evaluates their sum and prints it to screen	
 	 */
+	
 	public static void bigFunction(int a, int b) 
 	{
 		int sum = a+b;
