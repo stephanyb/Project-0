@@ -54,6 +54,7 @@ public class ProjectZero {
 			int first = cin.nextInt();
 			
 			if(cin.hasNextInt(2))
+				//checks if number can be interpreted as a binary number
 			{
 				cin.useRadix(2);
 				int second = cin.nextInt();
