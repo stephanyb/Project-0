@@ -7,6 +7,7 @@ import java.util.Scanner;
  *
  */
 
+
 public class ProjectZero {
 
 	public static void main(String[] args) 
@@ -108,21 +109,21 @@ public class ProjectZero {
 			
 		cin.close();	
 	}
-	
+		
 	/**
-	 * Function receives the copy of two integer element types, 
-	 * evaluates their sum and prints it to screen	
+	 * @param a an integer primitive type holding a copy of the integer "first" from main
+	 * @param b an integer primitive type holding a copy of the integer "second" from main
 	 */
-	
 	public static void bigFunction(int a, int b) 
 	{
 		int sum = a+b;
 		System.out.println(" The sum of " + a + " + "+ b + " = "+sum);
 	}
 	
+	
 	/**
-	 * Function receives the copy of two double element types, 
-	 * evaluates their sum and prints it to screen
+	 * @param a is a double primitive type variable holding a copy of the variable "first" inputed by the user
+	 * @param b is a double primitive type variable holding a copy of the variable "second" inputed by the user
 	 */
 	public static void bigFunction(double a, double b) 
 	{
@@ -130,16 +131,17 @@ public class ProjectZero {
 		System.out.println(" The sum of " + a + " + "+ b + " = "+sum);
 	}
 	
+	
 	/**
-	 * Function receives the copy of two integer element types, 
-	 * evaluates their sum and prints it in binary to screen
+	 * @param a an integer primitive type holding a copy of the passed (base 10) variable "first" from main
+	 * @param b an integer primitive type holding a copy of the passed variable (base 10)"second" from main
 	 */
 	public static void sumOfBins(int a, int b) 
 	{
 		int sum = a+b;
 		String binSum = Integer.toBinaryString(sum);//converts the sum integer value 
 											        //to a binary string in base 2
-		System.out.println(" The sum of " + a + " + "+ b + " = "+binSum+ " in Binary");
+		System.out.println(" The sum of " + a + " + "+ b + " = "+ sum + " or " +binSum+ " in Binary");
 	}
 	
 }
