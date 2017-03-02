@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/**
+ * Sums two numeric values in a type-sensitive way.
+ * 
+ * @author Stephany Belendez
+ *
+ */
+
 public class ProjectZero {
 
 	public static void main(String[] args) 
@@ -102,7 +109,8 @@ public class ProjectZero {
 		cin.close();	
 	}
 	
-	/*Function receives the copy of two integer element types, 
+	/**
+	 * Function receives the copy of two integer element types, 
 	 * evaluates their sum and prints it to screen	
 	 */
 	
@@ -112,7 +120,8 @@ public class ProjectZero {
 		System.out.println(" The sum of " + a + " + "+ b + " = "+sum);
 	}
 	
-	/*Function receives the copy of two double element types, 
+	/**
+	 * Function receives the copy of two double element types, 
 	 * evaluates their sum and prints it to screen
 	 */
 	public static void bigFunction(double a, double b) 
@@ -121,7 +130,8 @@ public class ProjectZero {
 		System.out.println(" The sum of " + a + " + "+ b + " = "+sum);
 	}
 	
-	/*Function receives the copy of two integer element types, 
+	/**
+	 * Function receives the copy of two integer element types, 
 	 * evaluates their sum and prints it in binary to screen
 	 */
 	public static void sumOfBins(int a, int b) 
